@@ -111,6 +111,12 @@ spec:
             - containerPort: 8080        
 ```
 
+- 일반 삭제시 self-healing으로 바로 살아남
+- deployment를 삭제해야 deployment, pod, replica가 다 삭제됨
+``` 
+kubectl delete deployment.apps/order
+```
+
 - 입력 후, 저장
 - 기존 서비스 종료하고 새로 배포해 보기
 ```
